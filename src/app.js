@@ -18,10 +18,10 @@ app.get("/weather", (req, res) => {
     res.send("weather");
 })
 app.get("/about", (req, res) => {
-    res.send("about");
+    res.render("about");
 })
 app.get("*", (req, res) => {
-    res.send("404 Not found");
+    res.render('error');
 })
 
 const port = 8000;
