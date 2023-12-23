@@ -10,6 +10,7 @@ const getdata = async (e) => {
     e.preventDefault();
     // const city = cityinput.
     let city = cityinput.value;
+    city = city.trim();
     if (city === "") {
         locationscope.innerText = "Please Enter a City Name";
     } else {
