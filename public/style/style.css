@@ -1,14 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --main-bg : #222b3a;
+:root {
+    --main-bg: #222b3a;
 }
 
-body{
+body {
     background-color: var(--main-bg);
     color: white;
     min-height: 100vh;
@@ -17,33 +17,42 @@ body{
     justify-content: space-between;
     font-family: 'Piazzolla', serif;
 }
-.navicon{
+
+.navicon {
     color: white;
 }
 
-.navicon:hover{
+.navicon:hover {
     color: aqua;
 }
 
-.fa-snowflake{
+.fa-snowflake {
     transition: all;
     animation: rotation 2s linear infinite;
 }
+
 @keyframes rotation {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
-    
+
 }
-.mainbox{
+
+.mainbox {
     flex-direction: row;
     align-items: center;
 }
-@media  screen and (max-width: 800px) {
-    .mainbox{
+
+@media screen and (max-width: 800px) {
+    .mainbox {
         flex-direction: column;
     }
-  }
+}
+
+.fas {
+    font-size: 5rem;
+}
