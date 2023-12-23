@@ -1,13 +1,18 @@
 const express = require('express');
-const requests = require('requests');
 const path = require('path');
+const requests = require('requests');
+var hbs = require('hbs')
 
 const app = express();
 const statichome = path.join(__dirname,"../public")
 app.use(express.static(statichome))
 
+app.set('view engine', "hbs");
+app.set('views',path.join(__dirname,'../templates/views'));
+hbs.registerPartials(path.join(__dirname,'../templates/partials'));
+
 app.get("/", (req, res) => {
-    res.send("home");
+    res.render('index');
 })
 app.get("/weather", (req, res) => {
     res.send("weather");

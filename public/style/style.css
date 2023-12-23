@@ -1,5 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-bg : #222b3a;
+}
+
 body{
-    background-color: #222b3a;
+    background-color: var(--main-bg);
     color: white;
     min-height: 100vh;
     display: flex;
@@ -7,4 +17,33 @@ body{
     justify-content: space-between;
     font-family: 'Piazzolla', serif;
 }
+.navicon{
+    color: white;
+}
 
+.navicon:hover{
+    color: aqua;
+}
+
+.fa-snowflake{
+    transition: all;
+    animation: rotation 2s linear infinite;
+}
+@keyframes rotation {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+.mainbox{
+    flex-direction: row;
+    align-items: center;
+}
+@media  screen and (max-width: 800px) {
+    .mainbox{
+        flex-direction: column;
+    }
+  }
