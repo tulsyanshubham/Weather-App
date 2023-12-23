@@ -41,7 +41,9 @@ body {
     }
 
 }
-
+.weinput{
+    width: 35vw;
+}
 .mainbox {
     flex-direction: row;
     align-items: center;
@@ -50,6 +52,9 @@ body {
 @media screen and (max-width: 800px) {
     .mainbox {
         flex-direction: column;
+    }
+    .weinput{
+        width: 85vw;
     }
 }
 
