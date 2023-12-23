@@ -27,18 +27,15 @@
                 <input type="text" class="form-control" placeholder="Enter the City Name" id="cityinput">
                 <button class="input-group-text btn btn-success" id="submitbtn">Search</button>
             </form>
-            <div class="card my-3">
+            <div class="card my-3" style="height: 224px;">
                 <div class="card-body bg-dark" style="color: white; border-radius: 6px;">
-                    <h5 class="card-title" id="locationscope">{%location%}, {%country%}</h5>
-                    <h6 class="card-subtitle" id="date">WED | Nov 23 | 10:49AM</h6>
-                    <div class="d-flex flex-row justify-content-between align-items-center mx-3 my-4">
-                        <div class="h1" id="temp">25.25&deg;C</div>
-                        <div id="weathercon">
-                            <i class="fas fa-sun" style="color: #eccc68;"></i>
-                        </div>
+                    <h5 class="card-title text-center" id="locationscope">Please Enter the City Name</h5>
+                    <h6 class="card-subtitle text-center" id="date"></h6>
+                    <div class="d-flex flex-row justify-content-between align-items-center mx-3 my-4" style="gap: 4vw;">
+                        <div class="h1" id="temp"></div>
+                        <div id="weathericon"></div>
                     </div>
-                    <h6 class="card-subtitle" id="maxmin">Min {%tempmin%}&deg;C | Max {%tempmax%}&deg;C
-                    </h6>
+                    <h6 class="card-subtitle text-center" id="maxmin"></h6>
                 </div>
             </div>
         </div>

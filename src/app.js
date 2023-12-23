@@ -12,16 +12,16 @@ app.set('views',path.join(__dirname,'../templates/views'));
 hbs.registerPartials(path.join(__dirname,'../templates/partials'));
 
 app.get("/", (req, res) => {
-    res.render('home',{page : "Home"});
+    res.render('home',{page : "Home",home:"active",weather:"",about:""});
 })
 app.get("/weather", (req, res) => {
-    res.render("weather",{page:"Weather"});
+    res.render("weather",{page:"Weather",home:"",weather:"active",about:""});
 })
 app.get("/about", (req, res) => {
-    res.render("about",{page:"About"});
+    res.render("about",{page:"About",home:"",weather:"",about:"active"});
 })
 app.get("*", (req, res) => {
-    res.render('error',{page:"Error"});
+    res.render('error',{page:"Error",home:"active",weather:"",about:""});
 })
 
 const port = 8000;
