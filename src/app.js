@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
     res.render('home');
 })
 app.get("/weather", (req, res) => {
-    res.send("weather");
+    res.render("weather");
 })
 app.get("/about", (req, res) => {
     res.render("about");
