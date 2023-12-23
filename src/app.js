@@ -12,7 +12,7 @@ app.set('views',path.join(__dirname,'../templates/views'));
 hbs.registerPartials(path.join(__dirname,'../templates/partials'));
 
 app.get("/", (req, res) => {
-    res.render('index');
+    res.render('home');
 })
 app.get("/weather", (req, res) => {
     res.send("weather");
