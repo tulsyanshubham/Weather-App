@@ -48,6 +48,9 @@ body {
     flex-direction: row;
     align-items: center;
 }
+.homeimage{
+    width: 28vw;
+}
 
 @media screen and (max-width: 800px) {
     .mainbox {
@@ -55,6 +58,9 @@ body {
     }
     .weinput{
         width: 85vw;
+    }
+    .homeimage{
+        width: 75vw;
     }
 }
 
